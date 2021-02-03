@@ -9,18 +9,12 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Setup Python
-        uses: actions/setup-python@v1
+        uses: actions/setup-python@v2
         with:
           python-version: 3.9
 
-      - name: Install dependencies with pipenv
-        run: |
-          pip install pipenv
-          pipenv install --deploy --dev
+      - name: Setup Poetry
+      - uses: Gr1N/setup-poetry@v4
 
-      - run: pipenv run isort --recursive --diff
-      - run: pipenv run black --check .
-      - run: pipenv run flake8
-      - run: pipenv run mypy
-      - run: pipenv run pytest --cov --cov-fail-under=100
-
+      - run: poetry install
+      - run: poetry run isort src
