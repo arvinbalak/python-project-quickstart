@@ -15,14 +15,14 @@ repos:
         - id: trailing-whitespace
     - repo: local
       hooks:
-        - id: black
-          name: black
-          entry: poetry run black --check src
-          language: system
-          pass_filenames: false
         - id: isort
           name: isort
-          entry: poetry run isort src
+          entry: poetry run isort
+          language: system
+          pass_filenames: false
+        - id: black
+          name: black
+          entry: poetry run black
           language: system
           pass_filenames: false
         - id: flake8
