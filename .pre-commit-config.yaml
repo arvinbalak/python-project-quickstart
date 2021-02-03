@@ -17,12 +17,12 @@ repos:
       hooks:
         - id: isort
           name: isort
-          entry: poetry run isort
+          entry: poetry run isort src
           language: system
           pass_filenames: false
         - id: black
           name: black
-          entry: poetry run black
+          entry: poetry run black src
           language: system
           pass_filenames: false
         - id: flake8
