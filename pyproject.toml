@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "python-project-quickstart"
+version = "0.1.0"
+description = "Quick start github template for any python project."
+authors = ["aravindbk92 <aravindbk92@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "3.9.*"
+
+[tool.poetry.dev-dependencies]
+black = "*"
+isort = "*"
+flake8 = "*"
+mypy = "*"
+pre-commit = "*"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
