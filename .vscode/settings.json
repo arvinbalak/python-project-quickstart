@@ -1,5 +1,4 @@
 {
-  "editor.formatOnSave": true,
   "python.formatting.blackPath": ".venv/bin/black",
   "python.formatting.provider": "black",
   "python.linting.enabled": true,
@@ -8,5 +7,6 @@
   "python.linting.mypyEnabled": true,
   "python.linting.mypyPath": ".venv/bin/mypy",
   "python.pythonPath": ".venv/bin/python3.9",
-  "python.sortImports.path": ".venv/bin/isort"
+  "python.sortImports.path": ".venv/bin/isort",
+  "editor.formatOnSave": true
 }
